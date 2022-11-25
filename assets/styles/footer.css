@@ -1,0 +1,17 @@
+.footer {
+  height: 50px;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  font-size: 12px;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .footer>h1 {
+    font-size: 20px;
+  }
+}

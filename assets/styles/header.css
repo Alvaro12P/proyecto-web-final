@@ -1,0 +1,129 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: 0 10px;
+  z-index: 10;
+}
+
+#svg-container {
+  flex: 1;
+  cursor: default;
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+#svg-container>svg {
+  flex: 1;
+  cursor: default;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+.header-menu {
+  display: flex;
+  list-style: none;
+  color: white;
+  gap: 10px;
+  margin-right: 20px;
+  font-size: 18px;
+  height: 100%;
+  align-items: center;
+}
+
+.header-menu>div {
+  cursor: pointer;
+  transition: border-top 200ms ease-in-out;
+  border-top: 2px solid transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu>div:hover {
+  border-top: 2px greenyellow solid;
+}
+
+.header-menu>div>a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+div.extras {
+  display: none;
+}
+
+#mobile-menu-btn {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+#mobile-menu-close-btn {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+
+  .mobile-header-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    gap: 10px;
+    font-size: 24px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .mobile-header-menu>div {
+    border-right: 2px solid transparent;
+    width: 100%;
+    justify-content: center;
+    transition: border-right 200ms ease-in-out;
+  }
+
+  .mobile-header-menu>div>a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-header-menu>div:hover {
+    border-right: 2px greenyellow solid;
+    background-color: rgb(30, 30, 30);
+  }
+
+  #mobile-menu-btn {
+    display: inline-block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 0px;
+    height: calc(100vh - 50px);
+    background-color: rgb(24, 24, 24);
+    z-index: 10;
+    border-top: 1px white solid;
+  }
+}

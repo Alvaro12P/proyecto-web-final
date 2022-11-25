@@ -1,0 +1,94 @@
+#sign-up-form-container,
+#log-in-form-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  width: 100%;
+}
+
+#sign-up-form,
+#log-in-form {
+  background-color: rgb(30, 30, 30);
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  text-align: center;
+}
+
+#sign-up-form>h1,
+#log-in-form>h1 {
+  cursor: default;
+  border-bottom: 2px solid darkgrey;
+  padding-bottom: 5px;
+}
+
+.data-input {
+  padding: 0.5rem 0.75rem;
+  color: #374151;
+  line-height: 1.25;
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  appearance: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin-top: 16px;
+}
+
+.data-input:nth-child(2) {
+  margin-top: 24px;
+}
+
+.data-input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+#submit-btn {
+  margin-top: 24px;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: none;
+}
+
+#submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+#sign-up {
+  margin-top: 20px;
+}
+
+#sign-up>p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#sign-up>a {
+  color: #3b82f6;
+  font-size: 15px;
+}
+
+#sign-up>a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.password {
+  position: relative;
+}
+
+.password-eye {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 20;
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+  z-index: 1;
+}
