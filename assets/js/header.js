@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener('resize', (e) => {
     const w = e.target.innerWidth
-    if (w >= 768) {
+    if (w >= 980) {
       mobileMenuBtn.style.display = 'none'
       mobileCloseMenuBtn.style.display = 'none'
     } else {

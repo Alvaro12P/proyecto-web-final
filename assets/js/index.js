@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const extrasMenu = document.getElementById('header-menu-extras')
   const params = new URLSearchParams(window.location.search)
 
-  if (window.innerWidth <= 768 && params.get('extras') === 'true') {
+  if (window.innerWidth <= 980 && params.get('extras') === 'true') {
     extrasMenu.style.display = 'none'
   }
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('resize', (e) => {
     const w = e.target.innerWidth
-    if (w <= 768 && params.get('extras') === 'true') {
+    if (w <= 980 && params.get('extras') === 'true') {
       extrasMenu.style.display = 'none'
     } else if (params.get('extras') === 'true') {
       extrasMenu.style.display = 'flex'
