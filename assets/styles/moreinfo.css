@@ -1,0 +1,19 @@
+.more-info-btn {
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4169e1;
+    transition: transform 200ms ease-in-out;
+}
+
+.more-info-btn:hover {
+    transform: scale(1.1);
+    background-color: #3657ba;
+}
+
+.extra-text {
+    display: none
+}
